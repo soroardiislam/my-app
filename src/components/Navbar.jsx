@@ -55,10 +55,10 @@ const Navbar = () => {
           <div className="container mx-auto px-4 space-y-3">
             {naveLinks.map((link, index) => (
               <a
-              key={index}
-                onClick={()=>{
+                key={index}
+                onClick={() => {
                   setActiveLink(link.href);
-                  setIsMenuOpen(false)
+                  setIsMenuOpen(false);
                 }}
                 className={`block text-sm font-medium py-2 ${
                   activeLink === link.href
