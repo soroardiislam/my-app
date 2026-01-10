@@ -1,5 +1,5 @@
 import React from "react";
-import heroimage from "../assets/hero-image.png"
+import heroimage from "../assets/hero-image.png";
 
 const Hero = () => {
   return (
@@ -31,13 +31,19 @@ const Hero = () => {
             placeholder="Email address"
             className="flex-1 px-6 py-2 border border-gray-200 rounded-xl focus:outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-100 transition-all"
           />
-          <button className="bg-blue-600 text-white px-6 py-2.5 ml-1 rounded-xl hover:bg-blue-700 cursor-pointer transition-all hover:shadow-lg font-bold hover:shadow-blue-300">→</button>
+          <button className="bg-blue-600 text-white px-6 py-2.5 ml-1 rounded-xl hover:bg-blue-700 cursor-pointer transition-all hover:shadow-lg font-bold hover:shadow-blue-300">
+            →
+          </button>
         </div>
       </div>
       <div className="w-full md:w-1/2 mt-16 md:mt-0 pl-0 md:pl-12">
-       <div className="relative">
-        <img src={heroimage} alt="hero image" className="rounded-lg relative z-10 hover:scale-[1.02] transition-transform duration-300" />
-       </div>
+        <div className="relative">
+          <img
+            src={heroimage}
+            alt="hero image"
+            className="rounded-lg relative z-10 hover:scale-[1.02] transition-transform duration-300"
+          />
+        </div>
       </div>
     </section>
   );
